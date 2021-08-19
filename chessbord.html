@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChessBord</title>
+</head>
+<body>
+    <h1>Welcome JS Class At TIIDElab</h1>
+    <p>ChessBord</p>
+    
+    <script>
+
+        // trying my output
+        // var i;
+        // for(i=8; i>=0; i--){
+        //     var s;
+        //     for (let s = 8; s >=0; s--) {
+        //         console.log('*')
+                
+        //     }
+        //     console.log("\n") 
+        // }
+        //     var size =8;
+        // for (let i = 1; i <= size; i++) {
+        //     console.log(i);
+        //     document.write(i)
+        //     // console.log("\n")
+        //     // document.write("\n")
+        //     for (let j = 1; j <=3; j++) {
+                
+        //         // console.log(j);
+        //         // console.log("#\n")
+        //         document.write('#\n')
+               
+        //     }
+        //     document.write("<br>")
+            
+        // }
+
+            
+        
+       
+       
+        var width = Number(prompt(`Enter width of the grid`))
+        var height =Number(prompt(`Enter height of the grid`))
+        if (!Number.isNaN(height && width)) {
+
+            var hash = '';
+            var height =8;
+            var width =8;
+            height += 0;
+            width += 0;
+            console.log(`This is the Result of an ${width} X ${height} Grid`);
+            document.write(`This is the Result of an ${width} X ${height} Grid `);
+        for(let i =0; i < height; i++){
+            if (i % 2 === 0) {
+                var w = ' '  
+            }
+    
+            hash += w;
+            for(var j = 1; j < width; j++)
+            {
+                
+                if(w == '#'){
+                 
+                   hash += ' ';
+                   w = ' ';
+                }
+                else{
+                  
+                   hash += '#'
+                   w = '#'
+                   //w is holding hash to the hash
+                } 
+            }
+            hash += '\n';
+            
+        }
+        console.log(hash); 
+        document.write(hash);
+    }
+    else{
+        alert("You can only Enter a Number Not a Alphabet")
+    }
+
+    </script>
+</body>
+</html>

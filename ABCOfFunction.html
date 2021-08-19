@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC of Function</title>
+</head>
+<body>
+    <h1>Welcome to JS Class at TIIDElab</h1>
+    <p>ABC of function</p>
+    
+</body>
+<script>
+    let X = 10;
+    if(true){
+        let y = 20;
+        let z = 30;
+        console.log(X + y + z);
+        // result is 60
+    }
+    // console.log(X + y + z);
+    // result is 40 because y is not visible here
+    // *note when we have multiple binding having the same name then X wil be replace
+    //example
+    // const halve = function(n){
+    //     return n/2;
+    // };
+    // // console.log(halve(n));
+    // // error cannot access n b4 initialization
+    // let n = 10;
+    // console.log(halve(2));
+    // // result = 1 
+    // console.log(halve(n));
+    // // n is 5
+    // console.log(n);
+    // // result is 10
+    // console.log(halve(n));
+    // // n is 5
+
+    //*Note if we initialize  n= 10 before the function
+    // let m = 10;
+    // const halve1 = function(m){
+    //     return m/2;
+    // };
+    // console.log(halve1(m));
+    // // m is 5
+   
+    // console.log(halve1(2));
+    // // result = 1 
+    // console.log(halve1(m));
+    // // n is 5
+    // console.log(m);
+    // // result is 10
+    // console.log(halve1(m));
+    // // n is 5
+
+     const hummus = function(factor){
+         const ingredient = function(amount, unit, name){
+             let ingredientAmount = amount * factor;
+             if (ingredientAmount > 1) {
+                 unit += "s"
+             }
+             console.log(`${ingredientAmount} ${amount} ${name}`);
+         };
+         ingredient(1, "can", "chickpeas");
+         ingredient(0.25, "cup", "tahini");
+         ingredient(1.25, "can", "lemon juice");
+         ingredient(2, "Tablespoon", "Olive Oil");
+         ingredient(1, "can", "chickpeas");
+         ingredient(0.5, "teaspoon", "cumin");
+     };
+     console.log(hummus(5));
+     
+</script>
+</html>

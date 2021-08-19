@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz</title>
+</head>
+<body>
+
+    <h1>Welcome to JS Class at TIIDElab</h1>
+    <p>FizzBuzz Assignment</p>
+    
+    <script>
+        var size = 100;
+        console.log(3 % 3 == 0);
+        for (let j = 1; j <= size; j++) {
+              let  three = j% 3;
+              let  five = j % 5;
+            if (three === 0) {
+                console.log("Fizz");
+            }
+             else if (five === 0) {
+                console.log("Buzz");
+            }
+            else if (three === 0 && five === 0) {
+                console.log("FizzBuzz");
+            }
+            else{
+                console.log(j)
+            }
+        }
+        
+    </script>
+</body>
+</html>
